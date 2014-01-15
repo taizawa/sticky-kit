@@ -104,7 +104,8 @@
             css = {
               position: "",
               width: "",
-              top: ""
+              top: "",
+              paddingTop: 0
             };
             elm.css(css).removeClass(sticky_class).trigger("sticky_kit:unstick");
           }
@@ -128,7 +129,8 @@
             fixed = true;
             css = {
               position: "fixed",
-              top: offset
+              top: offset,
+              paddingTop: '80px'
             };
             css.width = elm.width() + "px";
             elm.css(css).addClass(sticky_class).after(spacer);
